@@ -1,0 +1,20 @@
+# possible errors: D E F G H
+#   1     2 3   4   5   index
+# A E B C E E C E D E C C C
+#   2     5 6   8   10  timedelta
+#
+# j: 1 > n-1
+#     i: 0 > j-1
+#
+#     float('inf')
+#     1 vectorul cu timeframurile una dupa alta cu index si timedelta
+#     2 fereastra i si j
+#         cresc j
+#         cresc i
+#         cresc j din nou, daca cresc si i ul si scade densitatea atunci:
+#         cresc i si j
+#         tin minte frameurile "rigide" care nu se mai schimba
+#
+#     graphic dinamic/ sau nu in care sa arat densitatea ferestrei in timp real
+
+# pornesc cu j ul pana cand scade densitatea
