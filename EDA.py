@@ -1,11 +1,17 @@
-import numpy as np
+'''
+1. Perform an EDA step
+
+Here the code outputs the number of items produced every day in a new data frame
+
+(for correlation see correlation.py)
+(for algorithm see algorithm.py)
+'''
 import pandas as pd
-import matplotlib.pylab as plt
-import seaborn as sns
-from datetime import datetime
+from pathlib import Path
 from dateutil import parser
 
-data = pd.read_csv("/home/alex/PycharmProjects/interview/data.csv")
+path = Path(__file__).parent / 'data.csv'
+data = pd.read_csv(path)
 
 # print(data.shape)
 print(data.head())
@@ -52,9 +58,3 @@ no_items_per_day_dict= zip(days,count_items_per_day)
 
 new_df = pd.DataFrame(no_items_per_day_dict)
 print(new_df)
-
-
-
-
-
-

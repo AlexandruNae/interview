@@ -1,3 +1,19 @@
+'''
+The advantage of this algorithm is the complexity which is O(k*n):
+    n = number of rows
+    k = constant
+
+The disadvantage of this form of the algorithm is that he could be more 'smart'; After it finds a high density it could
+ search for that specific time-period (timeframe / time window) along the rows to see if another portion's density
+ of the array matches or is even bigger than the first-found.
+And this could be the thing that would improve this algorithm.
+
+Other way is to go through all specified Error apparitions and add all the 'distance' in time to all other matching
+ errors.
+The ones that have this sum the lowest have the highest density.
+'''
+
+
 import operator
 from pathlib import Path
 import pandas as pd
