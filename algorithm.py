@@ -122,12 +122,7 @@ dict_sorted = sort_the_dict(dictionar)
 
 print(dict_to_dataframe(dict_sorted).head())
 
-# print_the_dict(dict_sorted)
 
-
-# lst = sorted(lst, key=float)
-# print(lst[::-1])
-# print(len(lst))
 
 
 
